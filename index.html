@@ -19,36 +19,25 @@
 </head>
 
 <body onscroll="allMenu()">
+	<header id="header_inner" class="header_inner">
+		<a onclick="scrollToBlock('banner')" class="header_logo"><b class="logo">Active</b>Box</a>	
+		
+		<nav id="nav" class="nav">
+			<a id="nav_features" class="nav_link" onclick="scrollToBlock('features')">features</a>
+			<a id="nav_works" class="nav_link" onclick="scrollToBlock('works')">works</a>
+			<a id="nav_team" class="nav_link" onclick="scrollToBlock('team')">our team</a> 
+			<a id="nav_test" class="nav_link" onclick="scrollToBlock('test')">testimonials</a>
+			<a id="nav_dowload" class="nav_link" onclick="scrollToBlock('dowload')">dowload</a>
+		</nav>
 
 
+		<button id="menuButton" class="nav-toggle" onclick="mn()" type="button">
+			<span class="nav-toggle_item "></span>
+		</button>
+	</header>
 
 
-	
-		<header id="header_inner" class="header_inner">
-
-							<a onclick="scrollToBlock('banner')" class="header_logo"><b class="logo">Active</b>Box</a>	
-							
-							<nav id="nav" class="nav">
-								<a id="nav_features" class="nav_link" onclick="scrollToBlock('features')">features</a>
-								<a id="nav_works" class="nav_link" onclick="scrollToBlock('works')">works</a>
-								<a id="nav_team" class="nav_link" onclick="scrollToBlock('team')">our team</a> 
-								<a id="nav_test" class="nav_link" onclick="scrollToBlock('test')">testimonials</a>
-								<a id="nav_dowload" class="nav_link" onclick="scrollToBlock('dowload')">dowload</a>
-							</nav>
-
-
-							<button id="menuButton" class="nav-toggle" onclick="mn()" type="button">
-								<span class="nav-toggle_item "></span>
-							</button>
-
-		</header>
-	
-
-
-
-
-
-	<div class="banner" id="banner">		
+	<div class="banner" id="banner">
 		<div class="container">
 			
 			<div class="intro">
@@ -62,12 +51,7 @@
 
 
 
-
-
-
-
-
-	<a id="features" class="features">
+	<span id="features" class="features">
 		<div class="container">
 
 			<div class="features_items">
@@ -115,15 +99,10 @@
 
 
 		</div>
-	</a>
+	</span>
 
 
-
-
-
-
-
-	<a id="works" name="works" class="works">
+	<span id="works" name="works" class="works">
 		
 
 					<div class="works_item">
@@ -189,27 +168,10 @@
 							<div class="works_subtitle">Website Design</div>
 						</div>
 					</div>
-					
+	</span>
 
 
-
-
-	</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<a id="team" name="team" class="our_team">
+	<span id="team" name="team" class="our_team">
 		<div class="container">
 		
 
@@ -273,12 +235,10 @@
 
 
 		</div>
-	</a>
+	</span>
 
 
-
-
-	<a id="test" name="test" class="test">
+	<span id="test" name="test" class="test">
 		
 		<div class="test_item"><img class="test_photo" src="images/testimonial-1.jpg"></div>
 		<div class="test_item">
@@ -287,18 +247,9 @@
 				<div class="test_sub">SUSAN SIMS, INTERACTION DESIGNER AT XYZ</div>
 			</div>
 		</div>
-	</a>
+	</span>
 
-
-
-
-
-
-
-
-
-
-	<a id="dowload" name="dowload" class="dowload">
+	<span id="dowload" name="dowload" class="dowload">
 		<div class="container">
 
 				<div class="download_blog">
@@ -313,11 +264,7 @@
 					<div class="dw_btn">DOWNLOAD NOW</div>
 				</div>
 		</div>
-	</a>
-
-
-
-
+	</span>
 
 
 	<div class="end1">
@@ -346,10 +293,6 @@
 			
 		</div>
 	</div>
-
-
-
-
 
 	<div class="end2">
 		<div class="container">

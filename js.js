@@ -71,6 +71,23 @@ function allMenu() {
 
 function scrollToBlock(block) {
 	document.getElementById(block).scrollIntoView({block: "center", behavior: "smooth"})
+
+	if (document.body.clientWidth <= 900) {
+		let menuButton = document.getElementById('menuButton')
+		menuButton.className = 'nav-toggle'
+		menuButton.style.position = "absolute"
+
+		let nav = document.getElementById('nav')
+		nav.style.animationName = "animatetopTwo"
+		nav.style.opacity = "0"
+
+		setTimeout( () => {
+			document.getElementById('nav').style.display = "none"}, 500);
+
+
+		menuButton.setAttribute("onclick", "mn()")			
+	}
+
 }
 
 
